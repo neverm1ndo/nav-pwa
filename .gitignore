@@ -12,6 +12,7 @@ dist
 dist-ssr
 dev-dist
 public/tiles/*
+public/poi/*
 *.local
 
 # Editor directories and files

@@ -10,7 +10,7 @@ export default defineConfig({
       },
       includeAssets: ['**/**'],
       devOptions: {
-        enabled: true
+        // enabled: true
         /* other options */
       },
       manifest: {
