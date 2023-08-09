@@ -78,11 +78,11 @@ export class Navigation {
   }
 
   private _appendPOItoMap(locations: POILocation[]): void {
-    for (let i = 0; i < locations.length; i++) {
-      let [ name, latitude, longitude] = locations[i];
+    for (let location of locations) {
+      let [ name, latitude, longitude]: POILocation = location;
       const poiIcon = Leaflet.icon({
             iconUrl: `/img/POI/${name}.png`,
-            iconSize: [25,25], 
+            iconSize: [25, 25], 
           });
       Leaflet.marker([latitude, longitude], { icon: poiIcon })
              .addTo(this._map);

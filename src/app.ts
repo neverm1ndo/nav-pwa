@@ -36,7 +36,7 @@ export class Application extends HTMLElement {
 }
 
 customElements.define('nav-app', Application);
-const updateSW = registerSW({
+const updateSW: (reloadPage?: boolean) => Promise<void> = registerSW({
   onNeedRefresh() {
     if (!confirm("New content available. Reload?")) return;
     updateSW(true);
