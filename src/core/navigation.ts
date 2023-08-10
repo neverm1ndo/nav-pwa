@@ -27,9 +27,6 @@ export class Navigation {
   ){
     if (options.offset) this._offset = options.offset;
     if (options.defaultZoom) this._zoom = options.defaultZoom;
-    
-    this._init();
-    this._map.attributionControl.remove();
   }
 
   private _initTileLayer(tilesPath: string): Leaflet.TileLayer {
@@ -97,9 +94,10 @@ export class Navigation {
         .catch(console.error);
   }
 
-  private _init(): void {
+  public init(): void {
     this._initGeolocation();
     this._initTileLayer(`${this.options.tilesPath}/{z}/{x}/{y}.png`);
     this._initPOI();
+    this._map.attributionControl.remove();
   }
 }

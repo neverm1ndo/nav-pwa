@@ -10,6 +10,7 @@ export class Application extends HTMLElement {
   constructor() {
     super();
     this._resizeObserver.observe(document.body);
+    this._navigation.init();
   }
 
   private _navigation: Navigation = new Navigation(
