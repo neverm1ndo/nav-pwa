@@ -18,7 +18,7 @@ export class Application extends HTMLElement {
     {
       marker: Leaflet.icon({
         iconUrl: '/dot.png',
-        iconSize: [10, 10],
+        iconSize: [20, 20],
       }),
       tilesPath: '/tiles',
       offset: -0.011,

@@ -30,7 +30,7 @@ export class Navigation {
   }
 
   private _initTileLayer(tilesPath: string): Leaflet.TileLayer {
-    return Leaflet.tileLayer(tilesPath, { maxZoom: 18 })
+    return Leaflet.tileLayer(tilesPath, { maxZoom: 16 })
                   .addTo(this._map);
   }
 
