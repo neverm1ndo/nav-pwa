@@ -14,7 +14,7 @@ export class Application extends HTMLElement {
   }
 
   private _navigation: Navigation = new Navigation(
-    new Leaflet.Map(this),
+    new Leaflet.Map(this, { zoomControl: false }),
     {
       marker: Leaflet.icon({
         iconUrl: '/dot.png',
