@@ -1,7 +1,7 @@
 import { registerSW } from 'virtual:pwa-register';
 
-import './style.css';
-import './leaflet.css';
+import './style.scss';
+import 'leaflet/dist/leaflet.css';
 
 import Leaflet from 'leaflet';
 import { Navigation } from './core/navigation';

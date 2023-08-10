@@ -1,0 +1,6 @@
+.leaflet-tile-pane {
+    $hue-rotate: 180deg;
+    filter: hue-rotate($hue-rotate); 
+    -webkit-filter: hue-rotate($hue-rotate);
+}
+  
