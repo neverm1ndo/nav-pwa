@@ -17,8 +17,11 @@ export default defineConfig({
         name: 'PWA Nav',
         short_name: 'PWANav',
         display: 'standalone',
+        categories: ["navigation"],
         description: 'PWA Navigation app',
-        theme_color: '#242424',
+        theme_color: '#212529',
+        background_color: "#212529",
+        orientation: 'landscape-primary',
         icons: [
           {
             src: 'maskable_icon_x192.png',
@@ -29,6 +32,12 @@ export default defineConfig({
             src: 'maskable_icon_x512.png',
             sizes: '512x512',
             type: 'image/png'
+          },
+          {
+            src: 'maskable_icon_x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: "maskable"
           },
           {
             src: 'maskable_icon_x384.png',
